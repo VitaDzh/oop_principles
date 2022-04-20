@@ -30,7 +30,7 @@ public class TestAbstraction {
          */
         int howManyConvertible = 0;
         double max = Double.MIN_VALUE;
-        Phone mostExpensive = null;
+        Phone mostExpensive = null; // it is similar to an empty String container
         for (Phone phone : phones) {
             System.out.println(phone);
             if(phone.isConvertible()) howManyConvertible++;
@@ -38,6 +38,7 @@ public class TestAbstraction {
         }
         System.out.println(howManyConvertible);
         System.out.println("The most expensive phone is = " + mostExpensive.getClass().getSimpleName());
+        System.out.println("The color of the most expensive phone is = " + mostExpensive.color);
         System.out.println(IPhone.OS); // invoking static instance var
         System.out.println(Samsung.OS);
         System.out.println(IPhone.OS);
